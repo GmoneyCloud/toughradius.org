@@ -1,0 +1,134 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+html{
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: #5a5a5a;
+  line-height: 160%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga", "kern";
+  font-style: normal;
+  font-family: "Lucida Grande", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti !important;
+  /*font-size: 1em;*/
+  font-weight: 200;
+}
+
+footer .footbox{
+  background-color: #f4f4f4;
+  min-height: 96px;
+  margin-bottom: 0px;
+  padding: 20px;
+  margin-bottom: 0px;
+}
+
+footer .about h5{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+footer .about a{
+  color: gray;
+  font-size: 12px;
+}
+
+.navbar{
+/*    background: url(../img/navbg.png) repeat;
+    min-height: 30px;*/
+    background-color: #535353;
+    border:none;
+    border-radius: 0px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+  color:#d0d0d0;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.navbar-brand{
+   padding: 10px 20px;
+}
+
+.jumbotron {
+  /*background-image: url(../img/bg.jpg);*/
+  min-height: 512px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+.jumbotron h1{
+   font-size: 3.7em;
+   font-weight: 700;
+   text-align: center;
+}
+.jumbotron p{
+  font-size: 29px;
+  line-height: 200%;
+  text-align: center;;
+}
+
+.jumbotron .tr{
+  color: #3275c1;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.jumbotron .ctext{
+  color: #3275c1;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 0px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 0px;
+  }
+
+}
+
+
