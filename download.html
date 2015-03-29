@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ToughRADIUS Radius Server">
+    <meta name="author" content="jamiesun">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <title>toughradius | open source radius</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="http://www.toughradius.net"><img src="img/logo.png" /></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse navbar-right">
+              <ul class="nav navbar-nav ">
+                <li><a href="http://www.toughradius.net">首页</a></li>
+                <li><a href="http://www.toughradius.net/service.html">服务</a></li>
+                <li><a href="http://www.toughradius.net/download.html">下载</a></li>
+                <li><a href="http://docs.toughradius.net/build/html/" target="_blank">文档</a></li>
+                <li><a href="https://github.com/talkincode/ToughRADIUS" target="_blank">源码</a></li>
+                <li><a href="http://forum.toughradius.net" target="_blank">社区</a></li>
+                 <li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=scLEwcHew8Xxxd7E1tnD0NXYxMKf39TF" style="text-decoration:none;">在线反馈</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </div>
+    <!-- Carousel
+    ================================================== -->
+<div class="jumbotron">
+<div class="container">
+<p><img src="img/toughradius.png" title="toughradius.net"></p>
+<hr>
+<p><a  href="https://pypi.python.org/pypi/toughradius" class="btn btn-primary">latest stable</a>
+<a  href="http://download.toughradius.net/toughradius-windows.zip" class="btn btn-success">ToughRADIUS-Win32(latest)</a>
+<a  href="http://download.toughradius.net/ToughRADIUS%20%e6%93%8d%e4%bd%9c%e6%89%8b%e5%86%8c.pdf" class="btn btn-default">ToughRADIUS操作手册(latest)</a></p>
+<h3>V1.0.2版本说明：</h3>
+<ul>
+    <li>修正ros下发速率单位bug。</li>
+    <li>修复余额充值卡充值后状态不正确的bug。</li>
+    <li>新增数据备份与恢复功能。</li>
+</ul>
+<h3>V1.0.0版本说明：</h3>
+<ul>
+    <li>当前版本为正式发布版。</li>
+    <li>修复了自0.9.9以来的部分bug。</li>
+</ul>
+<h3>V0.9.9 版本说明：</h3>
+<ul>
+    <li>用户受理界面调整</li>
+    <li>修复当路由器未发送nas地址时不能识别nas地址的bug。</li>
+    <li>新增了操作员与区域关联支持，对区域进行权限控制。</li>
+    <li>新增了用户账号资费变更功能支持。</li>
+    <li>增强用户数据导入，支持证件号码，手机号码，支持原始开通日期导入。</li>
+</ul>
+<h3>V0.9.8 版本说明：</h3>
+<ul>
+    <li>新增mschapv1，mschapv2的验证支持。</li>
+    <li>修复了到期用户下发时长为0无效的bug。</li>
+    <li>首页消息统计图表刷新bug。</li>
+</ul>
+<h3>V0.9.7 版本说明：</h3>
+<ul>
+    <li>支持向NAS设备下发记账间隔，新增了默认参数。</li>
+    <li>支持爱快设备，支持下发限速，新增了默认参数。</li>
+    <li>toughctl工具新增了执行sql的功能，可以用来做升级数据库使用。</li>
+    <li>简化了安装配置流程，提供了一个最小可用使用Sqlite存储数据的版本,建议使用standalon模式。</li>
+    <li>去掉了了默认需要安装的mysql，openssl的依赖，当需要时另行安装，不影响最小可用版的正常使用。</li>
+    <li>去掉了数据库ftp备份功能，以后会提供更好的数据库备份方案。</li>
+    <li>支持到期用户下发特定时长的配置，配合到期下发地址池使用，当下发时长为0时，会发送认证拒绝消息。</li>
+    <li>管理界面首页控制台新增了对最近15分钟的消息负载统计。</li>
+</ul>
+<h3>V0.9.6 版本说明：</h3>
+<ul>
+  <li>提供了对sqlite嵌入式数据库支持,使用sqlite数据库无需安装任何数据库软件。</li>
+  <li>支持以独立进程运行所有服务，提供standalone模式。</li>    <li>数据库配置部分变化，采用dburl格式，考虑到后期支持mssql，pgsql等，提供灵活性。使用sqlite数据库时建议使用standalone模式运行，因为sqlite对多进程支持不是很好。</li>
+  <li>数据库计费信息表（slc_rad_billing）新增两个字段，需要更新此表，请参考版本附件sql。</li>
+  <li>新增对在线用户的过期检查，自动删除过期在线用户。</li>
+  <li>初始化数据库请用toughctl --initdb,无其他参数，无交互提示，如果有数据，请记得备份，sqlite数据只需要拷贝文件即可。</li>
+  <li>资费新增时，单位改为Mbps。</li>
+  <li>支持smtp免认证模式，密码填写no或none即可。</li>
+  <li>触发通知的url格式bug修复。</li>
+</ul>
+<h3>V0.9.5 版本说明：</h3>
+<ul>
+  <li>修复买断时长与买断流量资费续费的BUG。</li>
+  <li>支持监听指定的IP地址。</li>
+  <li>修复操作员密码格式导致的提交失败BUG。</li>
+  <li>修复管理控制台标题参数修改不生效的BUG。</li>
+  <li>新增数据库连接池自动重连的功能。</li>
+</ul>
+<h3>V0.9.4 版本说明：</h3>
+<ul>
+  <li>修复导入用户余额错误bug</li>
+  <li>#24 修复自助系统无法访问bug</li>
+  <li>稳定了最终版本的目录结构。</li>
+  <li>修复在线用户解锁bug，不能自动刷新页面。</li>
+  <li>修复预付费时长下发会话时长不准确的bug</li>
+  <li>实现Linux下https支持，包括管理控制台，自助服务系统，radius管理接口。</li>
+  <li>实现radius管理接口通信加密，进一步提高安全。</li>
+</ul>
+<h3>V0.9.0 版本说明：</h3>
+<ul>
+  <li>修复了前一版本的bug。</li>
+  <li>更新了日志记录方式</li>
+  <li>稳定了最终版本的目录结构。</li>
+  <li>支持以python标准模块安装</li>
+  <li>已可在生产环境使用</li>
+</ul>
+
+
+     
+</div><!-- /.carousel -->
+</div>
+
+
+<div id="footer">
+  <div class="container">
+    <ul>
+      <li><a href="">关于我们</a></li>
+      <li><a href="http://docs.toughradius.net/build/html/" target="_blank">在线文档</a></li>
+      <li><a href="http://forum.toughradius.net" target="_blank">在线社区</a></li>
+      <li><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=scLEwcHew8Xxxd7E1tnD0NXYxMKf39TF" style="text-decoration:none;">在线反馈</a></li>
+    </ul>
+    <div class="copy">
+        <p>&copy; 2015 toughradius.net  湘ICP备14015537号</p>
+    </div>
+      <div class="ads">
+        <p class="pull-right qrcode"><a href="https://www.toughradius.net"><img src="img/toughradius_wqrcode.jpg"></a></p>
+                <p class="pull-right"><a href="https://www.toughradius.net"><img src="img/toughradius_qrcode.jpg"></a></p>
+      </div>
+
+  </div>
+</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+

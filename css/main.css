@@ -20,23 +20,6 @@ body {
   font-weight: 200;
 }
 
-footer .footbox{
-  background-color: #f4f4f4;
-  min-height: 96px;
-  margin-bottom: 0px;
-  padding: 20px;
-  margin-bottom: 0px;
-}
-
-footer .about h5{
-  font-size: 14px;
-  font-weight: 500;
-}
-
-footer .about a{
-  color: gray;
-  font-size: 12px;
-}
 
 .navbar{
 /*    background: url(../img/navbg.png) repeat;
@@ -80,31 +63,107 @@ footer .about a{
 }
 
 .jumbotron {
-  /*background-image: url(../img/bg.jpg);*/
+  background-color:white;
   min-height: 512px;
   margin-top: 40px;
   margin-bottom: 0px;
+  padding-left:60px;
+  padding-right:60px;  
 }
 .jumbotron h1{
-   font-size: 3.7em;
-   font-weight: 700;
-   text-align: center;
+   font-size: 1.7em;
+   font-weight: 600;
 }
 .jumbotron p{
-  font-size: 29px;
+  font-size: 16px;
   line-height: 200%;
-  text-align: center;;
+  text-align: left;
+
 }
 
-.jumbotron .tr{
-  color: #3275c1;
-  font-style: italic;
-  font-weight: 600;
-  margin-bottom: 30px;
+.jumbotron h3{
+    font-size: 1.3em;
+    font-weight: 700;
 }
+.jumbotron ul {
+    margin-left:20px;
+    padding-left:0px;
+}
+.jumbotron ul li{
+    font-size: 14px;
+    line-height: 200%;
+}
+
+.jumbotron .friend-title{
+    font-size: 14px;
+    font-weight:600;
+    line-height: 120%;
+    text-align: left;
+    padding-left:19px;
+    background-color: #f5f5f5; 
+    border-color: #ddd;
+}
+
+
 
 .jumbotron .ctext{
   color: #3275c1;
+}
+
+.service-intro{
+    line-height:200%;
+}
+
+#footer{
+    height: 270px;
+    background-color: #f5f5f5;
+}
+
+#footer .container .text-muted {
+  margin: 20px 0;
+}
+
+
+#footer .container ul{
+    padding: 15px 10px 5px 10px;
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+#footer .container ul li {  
+    padding: 10px 10px 5px 10px;
+    display: inline;
+}
+
+#footer .container ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #868686;
+    font-weight: 700;
+    font-size: 90%;
+}
+
+#footer .container .copy a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+}
+
+
+#footer .container .copy{
+    padding: 5px 5px 10px 20px;
+    color: #333;
+}
+
+
+#footer .container .ads{
+    margin: 5px 0px 20px 0px;
+    padding: 5px 5px 10px 20px;
+}
+
+#footer .container .qrcode{
+    padding-right:10px;
+    padding-left:30px;
 }
 
 /* RESPONSIVE CSS
